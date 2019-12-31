@@ -1,0 +1,13 @@
+
+.card-image {
+  padding: 10px;
+}
+
+.collection .collection-item.avatar {
+  min-height: 60px;
+}
+
+
+.divRow {
+    background-color: white;
+}

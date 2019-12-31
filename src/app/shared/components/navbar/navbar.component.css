@@ -1,0 +1,15 @@
+.login {
+    background-color: #ffffff !important;
+    color:  #0079d3 !important;
+}
+.signup {
+    background-color: #0079d3 !important;
+}
+#search {
+    border: transparent !important;
+}
+
+.logo_cst {
+        width: 150px ;
+        height: 40px;
+}

@@ -1,0 +1,51 @@
+<div class="container" style="margin-top:15px">
+  <div class="row  divRow">
+
+    <div class="col s8">
+
+      <div class="row">
+        <div class="card">
+
+          <div class="card-action">
+            <ul class="collection">
+              <li class="collection-item avatar">
+                <img src="https://cdn4.buysellads.net/uu/1/57095/1576856619-ad3.png" alt="" class="circle">
+                <span>Posted by {{headCoomment.data.author}}</span>
+                <span class="time"> {{TimeFromNow(headCoomment.data.created)}}</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="card-image">
+            <img src="{{headCoomment.data.thumbnail}}" class="imgsize materialboxed">
+          </div>
+
+          <div class="card-content">
+            <p>{{headCoomment.data.title}}</p>
+          </div>
+
+          <div class="card-action">
+            <a routerLink="{{headCoomment.data.permalink}}">comments
+            </a> <span>{{headCoomment.data.num_comments}}</span>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="row  divRow">
+        <div class="col s8">
+          <app-comment [comments]="postComments"></app-comment>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="col s4">
+      <app-side-section></app-side-section>
+    </div>
+
+  </div>
+</div>
+
+<!-- </div> -->

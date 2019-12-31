@@ -1,0 +1,9 @@
+<div style="padding: 1em;" *ngFor="let comment of comments">
+  <ol>
+    <li>
+      <p *ngIf="comment.data?.author" >{{comment.data?.author}} <span>Points: {{comment.data.ups}}</span></p>
+      <app-comment style="padding: 1em;" *ngIf="comment.data?.children" [comments]="comment.data.children">
+      </app-comment>
+    </li>
+  </ol> 
+</div>
